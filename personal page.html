@@ -1,17 +1,136 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Personal Website</title>
-    </head>
-    <body>
-        <h1>Raja Rajeshwari M</h1>
-        <h3>About Myself:</h3>
-        <p>Hello!This is Raja Rajeshwari.I am currently pursuing my bachelors degree in the stream of 
-            Information Technology in Panimalar institue of Technology.I am tech enthusiast who’s always curious to learn new stuff—whether it’s coding, designing websites, or just figuring out how things work.I enjoy working on creative projects, from UI/UX design to fun little coding challenges.
+<html lang="en">
 
-            Besides tech, I’m into painting, journaling, and binge-watching my favorite series . I also love spending time with friends, collecting aesthetic stickers, and occasionally turning into a mini Pinterest board.
-            
-            I believe in good vibes, honest work, and trying to grow a little every day.
-        </p>
-    </body>
-</html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raja Rajeshwari M - Personal Page</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #c0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #5ac9c7;
+
+            overflow: hidden;
+        }
+
+        .nav li {
+            float: left;
+        }
+
+        .nav li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .nav li a:hover {
+            background-color: #6dd6d4;
+        }
+
+        .nav a.active {
+            background-color: #5da0a0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px;
+            gap: 30px;
+        }
+
+        .text-section {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .image-section {
+            flex-shrink: 0;
+        }
+
+        .image-section img {
+            width: 200px;
+            border-radius: 15%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            font-family: Verdana, sans-serif;
+            font-variant: small-caps;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        ul.hobby-list {
+            padding-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .text-section {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="nav">
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+
+    
+    <div class="container">
+        <div class="text-section">
+            <h3>Raja Rajeshwari M</h3>
+            <h4>About Myself:</h4>
+            <p>
+                Hello! This is Raja Rajeshwari. I am currently pursuing my B.Tech in Information Technology at Panimalar
+                Institute of Technology. I'm always curious to learn new stuff—whether it’s coding, design, or
+                understanding how things work. From UI/UX design to fun little coding challenges, I enjoy it all.
+                Besides that, I love journaling, and binge-watching my favorite series. I also love spending time
+                decorating with aesthetic stickers, and occasionally turning into a mini Pinterest queen. I believe in
+                good vibes, honest work, and trying to grow a little every day.
+            </p>
+            <h4>Hobbies:</h4>
+            <ul class="hobby-list">
+                <li>Reading books</li>
+                <li>Journaling</li>
+                <li>Badminton</li>
+                <li>Baking</li>
+            </ul>
+        </div>
+
+        <div class="image-section">
+            <img src="image.jpg" alt="Raja Rajeshwari M">
+        </div>
+    </div>
+
+</body>
+
+</html>
