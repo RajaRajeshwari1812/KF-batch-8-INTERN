@@ -35,7 +35,7 @@
                         </div>
                         <div class="col">
                             <label for="fname">Last Name</label>
-                            <input type="password" class="form-control" name="lname">
+                            <input type="text" class="form-control" name="lname">
                             <span class="error-message"></span>
                         </div>
                     </div>
@@ -54,14 +54,14 @@
 
                     <div class="mb-3">
                         <label for="address" class="form-label">Address 1</label>
-                        <input type="address" class="form-control" id="address" placeholder="1234 Main St"
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St"
                             aria-describedby="emailHelp">
                         <span class="error-message"></span>
 
                     </div>
                     <div class="mb-3">
                         <label for="address2" class="form-label">Address 2</label>
-                        <input type="address" class="form-control" id="address" placeholder="Apartment or Suite"
+                        <input type="text" class="form-control" id="address" placeholder="Apartment or Suite"
                             aria-describedby="emailHelp">
                         <span class="error-message"></span>
 
@@ -166,7 +166,7 @@
                     <hr>
                     <div class="row mb-3">
 
-                        <button type="button" class="btn btn-primary" id="checkoutBtn">Continue to Checkout</button>
+                        <button type="button" class="btn btn-primary" id="submit">Continue to Checkout</button>
                     </div>
                 </form>
             </div>
@@ -245,7 +245,7 @@
 
 
     <script>
-        document.getElementById("checkoutBtn").addEventListener("click", function () {
+        document.getElementById("submit").addEventListener("click", function () {
             let isValid = true;
 
             function validateField(input, condition, message) {
