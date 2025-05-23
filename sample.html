@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shopping Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <form action="checkout.php" method="POST">
+            <div class="card p-4">
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <h2>Shopping Cart</h2>
+                    </div>
+                    <div class="col-2">
+                        <h4>Format</h4>
+                    </div>
+                    <div class="col-2">
+                        <h4>Quantity</h4>
+                    </div>
+                    <div class="col-2">
+                        <h4>Price</h4>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Book 1 -->
+                <div class="row align-items-center mb-3">
+                    <div class="col-6 d-flex align-items-center">
+                        <img src="book1.jpg" class="img-fluid me-3" alt="book1" width="80" height="100">
+                        <div>
+                            <h5>Watching You</h5>
+                            <p>Lisa Jewel</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <p>Digital</p>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" class="form-control" name="qty_book1" value="1" min="1">
+                    </div>
+                    <div class="col-2">
+                        <p>$9.99</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Book 2 -->
+                <div class="row align-items-center mb-3">
+                    <div class="col-6 d-flex align-items-center">
+                        <img src="book2.jpeg" class="img-fluid me-3" alt="book2" width="80" height="100">
+                        <div>
+                            <h5>Broken Vows</h5>
+                            <p>Catharina Maura</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <p>Paperback</p>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" class="form-control" name="qty_book2" value="1" min="1">
+                    </div>
+                    <div class="col-2">
+                        <p>$13.99</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Payment Methods -->
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="payment" id="credit" value="credit"
+                                checked>
+                            <label class="form-check-label" for="credit">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-credit-card me-2"></i>Credit Card</h5>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="payment" id="debit" value="debit">
+                            <label class="form-check-label" for="debit">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-credit-card-2-front-fill me-2"></i>Debit Card</h5>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="paypal" value="paypal">
+                            <label class="form-check-label" for="paypal">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-paypal me-2"></i>Paypal</h5>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Card Details -->
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="cardName">Name on Card</label>
+                            <input type="text" class="form-control" id="cardName" name="card_name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cardNumber">Credit Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" name="card_number" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <label for="exp">Expiration</label>
+                                <input type="text" class="form-control" id="exp" name="exp" placeholder="MM/YY"
+                                    required>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <label for="cvv">CVV</label>
+                                <input type="text" class="form-control" id="cvv" name="cvv" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order Summary -->
+                    <div class="col-md-4">
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Subtotal
+                                <span>$23.98</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Shipping
+                                <span>$5.00</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <strong>Total (tax incl.)</strong>
+                                <strong>$28.98</strong>
+                            </li>
+                        </ul>
+                        <button type="submit" class="btn btn-primary w-100">
+                            Checkout <span class="badge bg-light text-dark ms-2">$28.98</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
