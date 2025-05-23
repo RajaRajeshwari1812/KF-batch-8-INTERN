@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raja Rajeshwari M - Personal Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #c2f0f2;
+    color: #222;
+    padding: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #55c2c3;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #003f5c;
+  }
+
+  .intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .text {
+    flex: 1;
+    max-width: 600px;
+  }
+
+  .text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .text .tagline {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #444;
+  }
+
+  .text p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+
+  .text h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  ul li {
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  .skills span {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 6px 12px;
+    margin: 5px 5px 5px 0;
+    border-radius: 12px;
+    font-size: 0.9em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .links a:hover {
+    color: #023e8a;
+  }
+
+  .image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+</style>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="intro">
+    <div class="text">
+      <h1>Raja Rajeshwari M</h1>
+      <p class="tagline">Techie by day, journal queen by night 💻📔</p>
+      <p>Hello! I'm currently pursuing my B.Tech in Information Technology at Panimalar Institute of Technology.</p>
+      <p>From UI/UX design to coding challenges, I love it all. I journal, paint, and occasionally vibe like a mini
+        Pinterest queen. I believe in good vibes, honest work, and growing every day.</p>
+
+      <h3>Hobbies</h3>
+      <dl>
+        <dt>📚 Reading books</dt>
+        <li>📓 Journaling</li>
+        <li>🏸 Badminton</li>
+        <li>🧁 Baking</li>
+      </dl>
+
+      <h3>Skills I Use</h3>
+      <div class="skills">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>UI/UX</span>
+      </div>
+
+      <div class="links">
+        <a href="#">📄 Resume</a>
+        <a href="#">💼 LinkedIn</a>
+        <a href="#">🐱 GitHub</a>
+      </div>
+    </div>
+    <div class="image">
+      <img src="Image.jpg" alt="Raja Rajeshwari M">
+    </div>
+  </header>
+</body>
+
+</html>
