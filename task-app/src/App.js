@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const techStack = ['React', 'Node.js', 'Express.js'];
+  const [content, setContent] = useState("I am learning react");
+  const [buttonText, setButtonText] = useState("Update Me");
+
+  // New state to track which page is selected
+  const [pageMessage, setPageMessage] = useState("This is Home page");
+
+  const handleClick = () => {
+    setContent("I am learning react and hooks as well");
+    setButtonText("Updated!");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <nav style={{ marginBottom: '20px' }}>
+        <button onClick={() => setPageMessage("This is Home page")}>Home</button>
+        <button onClick={() => setPageMessage("This is Blog page")}>Blog</button>
+        <button onClick={() => setPageMessage("This is contact us page")}>Contact us</button>
+      </nav>
+
+      <h1>{pageMessage}</h1>
+
+      {/* Show your existing tech stack and button only if Home is selected */}
+      {pageMessage === "This is Home page" && (
+        <>
+          <h2>My Tech Stack</h2>
+          <ul>
+            {techStack.map((tech, index) => (
+              <li key={index}>{tech}</li>
+            ))}
+          </ul>
+
+          <p>{content}</p>
+          <button onClick={handleClick}>{buttonText}</button>
+        </>
+      )}
     </div>
   );
 }
