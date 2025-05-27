@@ -1,4 +1,4 @@
-// App.js File
+
 import "bootstrap/dist/css/bootstrap.css";
 import { Component } from "react";
 import Button from "react-bootstrap/Button";
@@ -27,7 +27,7 @@ class App extends Component {
         });
     }
 
-   
+  
     addItem() {
         if (this.state.userInput !== "") {
             const userInput = {
@@ -38,11 +38,11 @@ class App extends Component {
                 value: this.state.userInput,
             };
 
-           
+          
             const list = [...this.state.list];
             list.push(userInput);
 
-           
+          
             this.setState({
                 list,
                 userInput: "",
@@ -56,7 +56,7 @@ class App extends Component {
       
         const updateList = list.filter((item) => item.id !== key);
 
-     
+    
         this.setState({
             list: updateList,
         });
