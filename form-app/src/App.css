@@ -1,0 +1,40 @@
+
+.simple-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 40px auto;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+  background-color: rgb(245, 212, 235);
+  padding: 30px;
+  border-radius: 3px;
+}
+
+.simple-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.simple-form input {
+  padding: 8px;
+  font-size: 1rem;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.simple-form button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.simple-form button:hover {
+  background-color: #0056b3;
+}
+
