@@ -5,7 +5,7 @@ function App() {
   const [content, setContent] = useState("I am learning react");
   const [buttonText, setButtonText] = useState("Update Me");
 
-  // New state to track which page is selected
+
   const [pageMessage, setPageMessage] = useState("This is Home page");
 
   const handleClick = () => {
